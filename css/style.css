@@ -1,0 +1,287 @@
+@import url(http://fonts.googleapis.com/css?family=Concert+One);
+@font-face {
+    font-family: 'Kruti-Dev-010';
+    src:  url('fonts/Kruti-Dev-010.ttf.woff') format('woff'),
+    url('fonts/Kruti-Dev-010.ttf.svg#Kruti-Dev-010') format('svg'),
+    url('fonts/Kruti-Dev-010.ttf.eot'),
+    url('fonts/Kruti-Dev-010.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font:600 1.2em 'Tajawal', sans-serif;
+	background-image: url("../assets/bg.png")!important;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	padding: 1em;
+}
+
+.container {
+	background:#fefefe;
+	max-width: 400px;
+    margin: auto;
+	padding: 1em;
+
+}
+
+.subcontainer {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    padding: 1em;
+	background:#fff;
+    margin-bottom: 0px;
+	border:  5px solid  #ffc600;
+			z-index:2;
+}
+
+.animation_med {
+	animation:pulse 2.5s infinite;
+}
+@keyframes pulse{
+	0%{-webkit-transform:scaleX(1);transform:scaleX(1)}
+	50%{-webkit-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.08,1.08,1.08)}
+	100%{-webkit-transform:scaleX(1);transform:scaleX(1)}
+	}
+	
+
+
+
+h2 {
+  display:block;
+  line-height:1;
+  color:#da0086;
+  font-size:1.6em;
+  text-transform: uppercase;
+}
+
+h3 {
+  display:block;
+  line-height:1;
+  color:#88c834;
+  font-size:1.4em;
+}
+
+
+.name_input {
+	background: #fff;
+	padding: 10px;
+}
+
+.name_input .chat {
+	color:#4fce5d;
+	font-size: 3.5em;
+	padding:10px;
+	border-radius: 4px;
+}
+
+.shareb {
+	padding: 10px;
+	margin:10px;
+	   	border-radius: 4px;
+}
+
+.shareb a {
+	text-decoration:none;
+	color: #fff;
+	font-size: 0.8em;
+}
+
+.shareb i{
+	padding:0 0.2em;
+	font-size: 1em;
+	font-weight:normal;
+}
+
+.shareb:hover {
+	opacity: 0.8;
+}
+
+.whatsapp {
+	background: #49af0b;
+}
+
+.facebook {
+	background: #3b5998 ;
+}
+
+
+.name_input p {
+	font-size: 0.8em;
+	color: #666;
+}
+
+.name_input input[type=name] {
+	background-color: #fffce6;
+	color: #333;
+   	border-radius: 4px;
+	border: none;
+	padding: 5px;
+	margin: 10px;
+	height: 50px;
+	width: 80%;
+	text-align: center;
+	font-size: 22px;
+	display: inline-block;
+	font:600 1em 'Tajawal', sans-serif;
+	border: 1px #dfdab9 solid;
+}
+
+.name_input .btn {
+	border-radius: 4px;
+	padding: 5px;
+	height: 50px;
+	width: 80%;
+	color: #fff;
+	background-color: #49af0b;
+	border: 1px #3d9707 solid;
+	cursor: pointer;
+	font:600 0.9em 'Tajawal', sans-serif;
+}
+
+.name_input .btn i {
+	color: #fff;
+	padding:5px;
+}
+
+
+
+.rock{
+	animation:infinite 1s rock
+	}
+	
+@keyframes rock{
+	0%{transform:rotate(-4deg)}
+	50%{transform:rotate(4deg)}
+	100%{transform:rotate(-4deg)}
+	}
+	
+.naming{
+	animation:rock infinite 1s;
+	  text-transform: uppercase;
+	    color:#ffffff;
+  background: #ffba00;
+  border-radius: 4px;
+  width: 100%;
+	}
+
+
+
+
+
+
+#confetti{
+	height:100%;
+	left:0;
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index:1;
+	}
+	
+
+.fingerprint-wrap{
+  background-color: #fff;
+  background-image: url(../assets/bg.png);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  text-align: center;
+  z-index: 99999999;
+  background-size: cover;
+}
+
+.fingerprint-col{
+  background-image: linear-gradient(orange, yellow);
+  width: 80%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin: 0em auto;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.fingerprint-wrap img{
+  position: relative;
+  width: 150px;
+}
+
+.finger_med img{
+    background-color: #ffa800;
+	border-radius: 4px;
+}
+
+.fingerprint-wrap h1{
+  text-align: center;
+  margin-top: 1%;
+  font-size: 2em;
+  text-transform:uppercase;
+  padding: 10px;
+  color: #fff;
+ 
+}
+
+.fingerprint-col p{
+  text-align: center;
+  margin-top: 20%;
+  font-size: 20px;
+  padding: 10px;
+  color: #fff;
+}
+
+@media only screen and (min-width: 786px) {
+  .fingerprint-wrap{
+    display: none;
+  } 
+  
+  #snackbar{
+    display: none;
+  } 
+  
+}
+
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    max-width: 100%; /* Set a default minimum width */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    bottom: 30px; /* 30px from the bottom */
+    z-index: 9999999999;
+}
+
+
+#snackbar.show {
+    visibility: visible; 
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
