@@ -44,7 +44,7 @@ $finger = "1"; // 1 = on  ****** 0 = off
 
 /***   نص صفحة البصمة    ***/
 $text_finger1 = "You have a special surprise gift";
-$text_finger2 = "Scan your finger to view your surprising gift.";
+$text_finger2 = "Scan your finger to view your surprise gift.";
 
 
 
